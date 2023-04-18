@@ -42,12 +42,13 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
   width: 100%;
   height: auto;
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1400px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: #434455;
@@ -116,7 +117,7 @@ body {
 }
 
 .header-container {
-  display: flex;
+  display: flex;  
   align-items: center;
 }
 
@@ -189,7 +190,7 @@ body {
 }
 
 .header-mail:is(:hover, :focus) {
-  color: #404bbf;
+  color: #404bbf; 
 }
 
 /**----------------Hero images+секція1----------------*/
@@ -241,7 +242,7 @@ body {
 }
 
 .visionstrategy-list {
-  display: flex;
+  display: flex;  
   gap: 24px;
 }
 
@@ -256,7 +257,7 @@ body {
 }
 
 .visionstrategy-item {
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .visionstrategy-titl {
@@ -276,7 +277,7 @@ body {
 }
 
 .benefits-list {
-  display: flex;
+  display: flex;  
   gap: 24px;
   margin-top: 72px;
 }
@@ -304,8 +305,9 @@ body {
 }
 
 .team-list {
-  display: flex;
+  display: flex;  
   gap: 24px;
+  
 }
 
 .team-item {
@@ -375,7 +377,7 @@ body {
 }
 
 .customers-list {
-  display: flex;
+  display: flex;  
   gap: 24px;
 }
 
@@ -418,7 +420,7 @@ body {
 }
 
 .footer-container {
-  display: flex;
+  display: flex;  
   align-items: start;
  
 }
@@ -545,7 +547,7 @@ body {
 
 
 .footer-buton-subscribe-wrap {
-  display: flex;
+  display: flex;  
   align-items: center;
   justify-content: center;
   gap: 24px;
