@@ -8,6 +8,7 @@
   --color-headings: #2e2f42;
   --button-background-color: #4d5ae5;
   --button-background-hover: #404bbf;
+  --text-color-focus-hover: #404bbf;
   --filter-btn-border: #f4f4fd;
   --color-logo-web: #4d5ae5;
   --color-logo-studio: #2e2f42;
@@ -119,6 +120,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  
 }
 
 .header-logo {
@@ -161,7 +163,7 @@ body {
 }
 
 .header-item:is(:hover, :focus) {
-  color: var(--button-background-hover);
+  color: var(--text-color-focus-hover, #404bbf);
 }
 
 .activ-page {
@@ -190,7 +192,7 @@ body {
 }
 
 .header-mail:is(:hover, :focus) {
-  color: #404bbf;
+  color: var(--text-color-focus-hover, #404bbf);
 }
 
 .mobile-menu-button {
@@ -216,6 +218,12 @@ body {
   border-radius: 50%;
 }
 
+.menu-close-button:is(:hover, :focus) {
+  background-color: var(--button-background-hover, #404bbf);
+  fill: white;
+  border: 0;
+}
+
 .mobile-menu {
   display: flex;
   position: fixed;
@@ -230,6 +238,7 @@ body {
   transition: opacity var(--transition), visibility var(--transition),
     transform var(--transition);
   z-index: 2;
+  opacity: 1;
 }
 
 .menu-list {
@@ -246,11 +255,11 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: #434455;
 }
 
 .menu-item:is(:hover, :focus) {
-  color: var(--button-background-hover);
+  color: var(--text-color-focus-hover, #404bbf);
 }
 
 .menu-address {
@@ -272,20 +281,32 @@ body {
   color: #434455;
 }
 
+.menu-mail:is(:hover, :focus) {
+  color: var(--text-color-focus-hover, #404bbf);
+}
+
 .menu-tel {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: #434455;
 }
-
+.menu-tel:is(:hover, :focus) {
+  color: var(--text-color-focus-hover, #404bbf);
+}
 .menu-soc-list {
   display: flex;
   margin-top: 48px;
   margin-right: auto;
   gap: 56px;
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /**----------------Hero images+секція1----------------*/

@@ -134,16 +134,39 @@
   .mobile-menu-button {
     display: none;
   }
-  .mobile-menu{display: none;}
-}
-@media screen and (min-width:1157px )
+  .mobile-menu {
+    display: none;
+  }
+  .header-container {
+    position: relative;
+  }
 
-{.mobile-menu-button {
+  .header-contact {
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: -50%;
+    right: 16px;
+  }
+  .header-mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .visionstrategy-list{
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 24px) / 2)  ;
+    
+  }
+}
+@media screen and (min-width: 1157px) {
+  .mobile-menu-button {
     display: none;
   }
 
   .mobile-menu {
     display: none;
   }
-  
 }
