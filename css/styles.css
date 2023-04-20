@@ -220,10 +220,7 @@ body {
 
 
 }
-.mobile-box{
 
-  
-}
 
 .mobile-menu {display: flex;
   position: fixed;
@@ -237,7 +234,6 @@ padding-bottom: 40px;
 flex-direction: column;
 transition: opacity var(--transition), visibility var(--transition),
     transform var(--transition);
-
     z-index: 100;
     opacity: 1;
 
