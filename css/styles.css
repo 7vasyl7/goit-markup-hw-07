@@ -49,7 +49,7 @@ img {
 
 body {
   max-width: 1400px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #434455;
   background-color: #ffffff;
@@ -82,7 +82,7 @@ body {
 /**-------------------Шаблони шрифтів-------------*/
 /*стилі лого*/
 .styles-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -172,7 +172,7 @@ body {
   position: absolute;
   left: 0;
   bottom: -26px;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;
@@ -193,16 +193,14 @@ body {
   color: #404bbf;
 }
 
-
-
 .mobile-menu-button {
   border: none;
   background-color: white;
-  padding: 0;  
+  padding: 0;
   cursor: pointer;
 }
 
-.menu-close-button{
+.menu-close-button {
   position: absolute;
   cursor: pointer;
   top: 24px;
@@ -213,91 +211,82 @@ body {
   width: 24px;
   height: 24px;
   padding: 0;
-  background: #E7E9FC;
+  background: #e7e9fc;
   border: 1px solid rgba(46, 47, 66, 0.1);
- border-radius: 50%;
-
-
-
+  border-radius: 50%;
 }
 
-
-.mobile-menu {display: flex;
+.mobile-menu {
+  display: flex;
   position: fixed;
-width: 100%;
-height: 100%;
-top: 0;
-left: 0;
-background: #FFFFFF;
-padding-left: 40px;
-padding-bottom: 40px;
-flex-direction: column;
-transition: opacity var(--transition), visibility var(--transition),
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  transition: opacity var(--transition), visibility var(--transition),
     transform var(--transition);
-    z-index: 100;
-    opacity: 1;
-
+  z-index: 2;
 }
 
-
-
-.menu-list {display: flex;
+.menu-list {
+  display: flex;
   flex-direction: column;
   gap: 40px;
-  
-  margin-top: 80px;}
 
-.menu-item {font-weight: 700;
-  font-size: 36px;
-  line-height:1.11;  
-  letter-spacing: 0.02em;
-  text-transform: capitalize; 
-  color: #2E2F42;}
-
-
-    .menu-item:is(:hover, :focus) {
-        color: var(--button-background-hover);
-    
-      }
-
-
-
-.menu-address {
-  
-  margin-top: auto;
-margin-right: auto;
+  margin-top: 80px;
 }
 
-.menu-contact {display: flex;
-  flex-direction: column;
-  gap: 40px;}
-
-.menu-mail {font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2; 
-  letter-spacing: 0.02em;
-  color: #434455;}
-
-.menu-tel{
-  
+.menu-item {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;  
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-    color: #2E2F42;}
+  color: #2e2f42;
+}
 
+.menu-item:is(:hover, :focus) {
+  color: var(--button-background-hover);
+}
 
-        .menu-soc-list {
-          display: flex;
-          margin-top: 48px;
-          margin-right: auto;
-          gap: 56px;
-        }
+.menu-address {
+  margin-top: auto;
+  margin-right: auto;
+}
 
+.menu-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
+.menu-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 
+.menu-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
 
+.menu-soc-list {
+  display: flex;
+  margin-top: 48px;
+  margin-right: auto;
+  gap: 56px;
+}
 
 /**----------------Hero images+секція1----------------*/
 .vision {
@@ -327,7 +316,7 @@ margin-right: auto;
 }
 
 .vision-btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: block;
   padding: 16px 32px;
   margin: 48px auto 0;
@@ -348,7 +337,7 @@ margin-right: auto;
 }
 
 .visionstrategy-list {
-  display: flex;  
+  display: flex;
   gap: 24px;
 }
 
@@ -383,7 +372,7 @@ margin-right: auto;
 }
 
 .benefits-list {
-  display: flex;  
+  display: flex;
   gap: 24px;
   margin-top: 72px;
 }
@@ -411,9 +400,8 @@ margin-right: auto;
 }
 
 .team-list {
-  display: flex;  
+  display: flex;
   gap: 24px;
-  
 }
 
 .team-item {
@@ -483,7 +471,7 @@ margin-right: auto;
 }
 
 .customers-list {
-  display: flex;  
+  display: flex;
   gap: 24px;
 }
 
@@ -526,9 +514,8 @@ margin-right: auto;
 }
 
 .footer-container {
-  display: flex;  
+  display: flex;
   align-items: start;
- 
 }
 
 .footer-logo-web {
@@ -600,22 +587,21 @@ margin-right: auto;
 }
 
 .footer-subscribe {
- 
   margin-left: auto;
 }
 
-.subscribe-text { 
-  font-family: 'Roboto';
-    font-style: normal;
-  display: block;  
+.subscribe-text {
+  font-family: "Roboto";
+  font-style: normal;
+  display: block;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-team-name, #ffffff);
- height: 24px;
- margin-bottom: 16px;
+  height: 24px;
+  margin-bottom: 16px;
 }
 
 .subscribe-input {
@@ -629,10 +615,10 @@ margin-right: auto;
 }
 
 .button-subscribe {
-  font-family: 'Roboto';
-    font-style: normal;
+  font-family: "Roboto";
+  font-style: normal;
   display: flex;
-    justify-items: center;
+  justify-items: center;
   cursor: pointer;
   border: 0;
   gap: 16px;
@@ -651,14 +637,11 @@ margin-right: auto;
   background-color: var(--button-background-hover, #404bbf);
 }
 
-
 .footer-buton-subscribe-wrap {
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
- 
- 
 }
 
 /**-------------Сторінка портфоліо--------------*/
@@ -800,7 +783,7 @@ margin-right: auto;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  
+
   padding: 72px 24px 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -836,12 +819,12 @@ margin-right: auto;
 }
 
 .modal-text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;  
+  color: #2e2f42;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -856,7 +839,7 @@ margin-right: auto;
   position: relative;
   margin-bottom: 4px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -879,7 +862,7 @@ margin-right: auto;
   border: 1px solid var(--bg-color-social-icons, #4d5ae5);
   border-radius: 4px;
 }
-.modal-icon-wrap:is(:hover, :focus-within) .modal-icon{
+.modal-icon-wrap:is(:hover, :focus-within) .modal-icon {
   fill: var(--bg-color-social-icons, #4d5ae5);
 }
 
@@ -905,7 +888,7 @@ margin-right: auto;
   left: 38px;
   transform: translateY(-50%);
 
-  content: '';
+  content: "";
   display: block;
 
   width: 0;
@@ -923,7 +906,6 @@ margin-right: auto;
   width: 18px;
   transform: translateY(-50%);
   transition: fill var(--transition);
-
 }
 
 .modal-label-text {
@@ -963,81 +945,60 @@ margin-right: auto;
   margin-bottom: 16px;
 }
 
-
-
-
-
-
 .modal-accpet-wrap {
   margin-bottom: 16px;
   display: flex;
 }
 
-.modal-accept-input {}
+.modal-accept-input {
+}
 
-.modal-accept-label {display: flex;
-  align-items: center;justify-content: center;
-  
+.modal-accept-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8E8F99;
-  fill: transparent; 
-} 
+  color: #8e8f99;
+  fill: transparent;
+}
 
 .modal-accept-label span {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 16px;
-    height: 16px; 
-    border: 1px solid rgba(46, 47, 66, 0.4);
-     border-radius: 2px;
-     margin-right: 8px;
-    }
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+}
 
-   .modal-accept-input:checked + .modal-accept-label span{
-    background: #404BBF;
-    border: 1px solid #404BBF;
-      border-radius: 2px;
-   }
+.modal-accept-input:checked + .modal-accept-label span {
+  background: #404bbf;
+  border: 1px solid #404bbf;
+  border-radius: 2px;
+}
 
-     .visually-hidden {
-       position: absolute;
-       width: 1px;
-       height: 1px;
-       margin: -1px;
-       border: 0;
-       padding: 0;
-       white-space: nowrap;
-       clip-path: inset(100%);
-       clip: rect(0 0 0 0);
-       overflow: hidden;
-     }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-
-        .modal-accept{margin-left: 7px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-accept {
+  margin-left: 7px;
+}
 
 /* .modal-accept-input:is(:hover, :focus) {
   background-color: var(--button-background-hover, #404bbf);
