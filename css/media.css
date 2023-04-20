@@ -1,4 +1,4 @@
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157px) {
   .container {
     max-width: 100%;
     padding-left: 16px;
@@ -55,6 +55,7 @@
   .header-list {
     display: none;
   }
+
   .visionhero {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -85,7 +86,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .team-list{gap: 72px;}
+  .team-list {
+    gap: 72px;
+  }
 
   .customers-list {
     gap: 72px 16px;
@@ -93,34 +96,54 @@
   .customers-item {
     flex-basis: calc((100% - 16px) / 2);
   }
-  .footer{padding: 96px 15px;}
-  .footer-container{padding-left: 0;
+  .footer {
+    padding: 96px 15px;
+  }
+  .footer-container {
+    padding-left: 0;
     padding-right: 0;
-    gap: 72px;}
-  .footer-logo{
+    gap: 72px;
+  }
+  .footer-logo {
     max-width: 268px;
     text-align: center;
-  margin-left: auto;
-   margin-right: auto;}
-.footer-cocial{text-align: center;
-   
     margin-left: auto;
-    margin-right: auto;}
-    .footer-subscribe{
-        width: 100%;
-        text-align: center;
-        }
-                .subscribe-input{width: 100%;}
-                .footer-buton-subscribe-wrap{gap: 16px;}
+    margin-right: auto;
+  }
+  .footer-cocial {
+    text-align: center;
 
-
-
-
-
-
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-subscribe {
+    width: 100%;
+    text-align: center;
+  }
+  .subscribe-input {
+    width: 100%;
+  }
+  .footer-buton-subscribe-wrap {
+    gap: 16px;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     max-width: 768px;
   }
+  .mobile-menu-button {
+    display: none;
+  }
+  .mobile-menu{display: none;}
+}
+@media screen and (min-width:1157px )
+
+{.mobile-menu-button {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  
 }
