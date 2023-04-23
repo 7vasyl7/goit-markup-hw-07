@@ -148,6 +148,7 @@ body {
   display: none;
 }
 
+
 .mobile-menu-button {
   border: none;
   background-color: white;
@@ -195,6 +196,7 @@ body {
   opacity: 1;
 }
 
+
 .menu-list {
   display: flex;
   flex-direction: column;
@@ -210,6 +212,9 @@ body {
   text-transform: capitalize;
   color: #434455;
   transition: color var(--transition);
+}
+.activ-page {
+  color: var(--bg-color-social-icons);
 }
 
 .menu-item:is(:hover, :focus) {
@@ -246,12 +251,14 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #434455;
+  color: var(--bg-color-social-icons);
   transition: color var(--transition);
 }
 .menu-tel:is(:hover, :focus) {
   color: var(--text-color-focus-hover, #404bbf);
 }
+
+
 .menu-soc-list {
   display: flex;
   margin-top: 48px;
@@ -266,9 +273,7 @@ body {
 }
 
 /**----------------Hero images+секція1----------------*/
-.vision {
-  padding-bottom: 0;
-}
+
 
 .visionhero {
   background-color: var(--background-color-vision, #2e2f42);
@@ -426,8 +431,12 @@ body {
   background-color: var(--bg-color-social-icons-hover, #f4f4fd);
 }
 
-.team-soc-icon {
-  fill: #f4f4fd;
+.team-soc-icon {  fill: #f4f4fd;
+}.team-name{
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;   
+    
 }
 
 /**-----------Секція 4--------------*/
@@ -447,11 +456,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 16px;
+  max-width: 396px;
 }
 
 .customers-item {
   flex-basis: calc((100% - 16px) / 2);
-  height: 88px;
+  /* height: 88px; */
 }
 
 .customs-icon {
@@ -563,10 +573,8 @@ body {
 }
 
 .subscribe-text {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Roboto';  
   display: block;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -633,10 +641,11 @@ body {
   column-gap: 24px;
   justify-content: start;
   margin-bottom: 48px;
+  max-width: 270px;
 }
 
 .filter-btn {
-  font-family: inherit;
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -647,7 +656,7 @@ body {
   cursor: pointer;
   border: 1px solid var(--color-card-border, #e7e9fc);
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   transition: color var(--transition), background-color var(--transition),
     border-color var(--transition), box-shadow var(--transition);
 }
@@ -705,7 +714,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 40px 32px 0 32px;
-  /* overflow: auto; */
+  
   transform: translate(0, 100%);
   transition: transform var(--transition);
   font-weight: 400;
@@ -881,8 +890,7 @@ body {
 }
 
 .modal-label-text {
-  display: flex;
-  flex-direction: column;
+  display: block;  
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
